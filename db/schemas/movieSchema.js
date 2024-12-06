@@ -28,6 +28,9 @@ const movieSchema = new mongooese.Schema({
         type: Number,
         required: true,
     },
+    comments: {
+        type: String,
+    }
 });
 
 const Movie = mongooese.model("Movie", movieSchema);
